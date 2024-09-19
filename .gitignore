@@ -1,6 +1,10 @@
 *.las
 *.laz
+*.pt
+.jukit*
 *.py
 Aligned
 *.pptx
 *.png
+*.jpg
+slides
