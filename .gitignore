@@ -1,5 +1,4 @@
 *.las
-*.laz
 *.pt
 .jukit*
 *.py
