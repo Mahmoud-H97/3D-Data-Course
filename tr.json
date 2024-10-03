@@ -1,0 +1,16 @@
+{
+  "pipeline": [
+    {
+      "type": "readers.las",
+      "filename": "2023_C_33AN1.laz"
+    },
+    {
+      "type": "filters.transformation",
+      "matrix": "0.866 0 -0.5 0  0 1 0 0  0.5 0 0.866 0  0 0 0 1"
+    },
+    {
+      "type": "writers.las",
+      "filename": "output_transformed.las"
+    }
+  ]
+}
