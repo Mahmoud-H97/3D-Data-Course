@@ -2,15 +2,28 @@
   "pipeline": [
     {
       "type": "readers.las",
-      "filename": "2023_C_33AN1.laz"
+      "filename": "33BN1_22_trees.LAZ",
+	  "spatialreference":"EPSG:7415"
     },
     {
       "type": "filters.transformation",
-      "matrix": "0.866 0 -0.5 0  0 1 0 0  0.5 0 0.866 0  0 0 0 1"
+      "matrix": "0.525 0 0.850 0  0 1 0 0  -0.850 0 0.525 0  0 0 0 1"
+    },
+	{
+      "type":"filters.reprojection",
+      "in_srs":"EPSG:7415",
+      "out_srs":"EPSG:7415"
     },
     {
-      "type": "writers.las",
-      "filename": "output_transformed.las"
+      "type": "writers.pcd",
+	  "a_srs":"EPSG:7415",
+	  "scale_x":"0.001",
+      "scale_y":"0.001",
+      "scale_z":"0.001",
+      "offset_x":"190980",
+      "offset_y":"468730",
+      "offset_z":"0",
+      "filename": "33BN1_22_trees_transformed.pcd"
     }
   ]
 }

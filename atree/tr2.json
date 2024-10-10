@@ -1,0 +1,12 @@
+{
+  "pipeline": [
+    {
+      "type": "readers.ply",
+      "filename": "fragment_001.ply"
+    },
+    {
+      "type": "writers.pcd",
+      "filename": "fragment_001.pcd"
+    }
+  ]
+}
