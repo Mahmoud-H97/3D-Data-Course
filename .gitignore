@@ -1,5 +1,7 @@
 *.las
+*.tif
 atree/
+B-spline/
 *.pt
 .jukit*
 *.py
